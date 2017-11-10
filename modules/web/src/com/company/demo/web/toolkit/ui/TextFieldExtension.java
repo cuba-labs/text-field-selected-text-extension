@@ -9,12 +9,10 @@ import com.vaadin.ui.TextField;
  */
 public class TextFieldExtension extends AbstractExtension {
 
-    private TextField component;
     private String selectedText;
 
     protected TextFieldExtension(TextField textField) {
-        component = textField;
-        extend(component);
+        extend(textField);
         selectedText = "";
 
         registerRpc((TextFieldExtensionServerRpc) selectedText ->

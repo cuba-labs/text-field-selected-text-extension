@@ -6,9 +6,24 @@
     <dialogMode height="600"
                 width="800"/>
     <layout>
-        <hbox spacing="true">
-            <textField id="textField"/>
-            <button caption="Show Selected Text" invoke="showSelectedText"/>
-        </hbox>
+        <grid spacing="true">
+            <columns count="2"/>
+            <rows>
+                <row>
+                    <textField id="textField1"
+                               caption="GWT Extension"/>
+                    <button align="BOTTOM_LEFT"
+                            caption="Show Selected Text"
+                            invoke="showSelectedText1"/>
+                </row>
+                <row>
+                    <textField id="textField2"
+                               caption="JavaScript Extension"/>
+                    <button align="BOTTOM_LEFT"
+                            caption="Show Selected Text"
+                            invoke="showSelectedText2"/>
+                </row>
+            </rows>
+        </grid>
     </layout>
 </window>
