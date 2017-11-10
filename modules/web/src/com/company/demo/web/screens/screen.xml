@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.demo.web.screens.Screen"
+        messagesPack="com.company.demo.web.screens">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <hbox spacing="true">
+            <textField id="textField"/>
+            <button caption="Show Selected Text" invoke="showSelectedText"/>
+        </hbox>
+    </layout>
+</window>
